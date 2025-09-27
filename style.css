@@ -1329,6 +1329,8 @@ footer{
     padding: 3rem 0 2rem 0;
     margin: 0;
     border-top: 1px solid var(--border-color);
+    position: relative;
+    z-index: 15; /* higher than other sections to prevent profile bleed-through */
 }
 
 footer nav {
