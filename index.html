@@ -8,14 +8,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Tiniuc Traian-Tudor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <!-- Added Font Awesome for modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
     <nav id = "desktop-nav">
-        <div class = "logo">Tiniuc Traian-Tudor</div>
         <div>
             <ul class = "nav-links">
                 <li>
@@ -100,11 +101,13 @@
             </div>
 
             <div class = "socials-container">
-                <img src="./Assets/linkedin.png" alt = "My LinkedIn profile"
-                class = "icon" onclick="location.href='https://www.linkedin.com/'">
+                <div class="social-icon" onclick="location.href='https://www.linkedin.com/'" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </div>
 
-                <img src ="./Assets/github.png" alt = "My GitHub profile"
-                class = "icon" onclick = "location.href = 'https://github.com/T-Traian'">
+                <div class="social-icon" onclick="location.href='https://github.com/T-Traian'" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </div>
                 
             </div>
         </div>
@@ -124,14 +127,16 @@
             <div class = "about-details-container">
                 <div class = "about-containers">
                     <div class = "details-container">
-                         <img src ="./Assets/experience.png" alt = "experience icon"
-                         class = "icon details-container-icon">
+                         <div class="about-icon">
+                            <i class="fas fa-briefcase"></i>
+                         </div>
                          <h3>Experience</h3>
-                         <p>Problem encountered... <br>Retrying... </p>
+                         <p>Currently I have no experience <br>Coming soon... </p>
                     </div>
                     <div class = "details-container">
-                        <img src ="./Assets/education.png" alt = "education icon"
-                         class = "icon details-container-icon">
+                        <div class="about-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
                          <h3>Education</h3>
                          <p>-Studying Mathematics and CS at UBB Cluj-Napoca <br>
                         -C1 Cambridge Certificate</p>
@@ -150,41 +155,98 @@
 
         </div>
 
-        <img src ="./Assets/arrow.png" alt = "Arrow icon" class = "icon-arrow"
-        onclick="location.href = './#experience'">
+        <div class="icon-arrow" onclick="location.href = './#experience'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
 
     </section>
 
     <section id = "experience">
-        <p class = "section_text_p1">Explore My</p>
+        <p class = "section_text_p1">A closer look into my</p>
         <h1 class = "title">Experience</h1>
         <div class = "experience-details-container">
+           <div class="work-experience-section">
+                <h2 class="experience-sub-title">Desired Positions</h2>
+                <ul class="position-list">
+                    <li><i class="fas fa-layer-group"></i> Fullstack Developer</li>
+                    <li><i class="fas fa-code"></i> Software engineer</li>
+                    <li><i class="fas fa-code"></i> Machine Learning Engineer</li>
+                    <li><i class="fas fa-chart-line"></i> Data Analyst</li>
+                </ul>
+            </div>
+        
+            
             <div class = "about-containers">
 
                 <div class = "details-container">
                     <h2 class = "experience-sub-title">Hard Skills</h2>
-                    <div class = "article-container">
+                    <div class = "article-container skills-compact">
+                        <!-- Frontend Technologies -->
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
                             <div>
-                                <h3>HTML</h3>
+                                <h3>HTML & CSS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
 
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
                             <div>
-                                <h3>Mathematics</h3>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- Backend & Frameworks -->
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h3>Next.js</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
 
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h3>Vite</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
                             <div>
                                 <h3>C++</h3>
                                 <p>Intermediate</p>
@@ -192,22 +254,15 @@
                         </article>
 
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
                             <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
+                                <h3>SQL</h3>
+                                <p>Basic</p>
                             </div>
                         </article>
 
-                        <!-- <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article> -->
                     </div>
                 </div>
 
@@ -215,8 +270,9 @@
                     <h2 class = "experience-sub-title">Soft Skills</h2>
                     <div class = "article-container">
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fas fa-ear-listen"></i>
+                            </div>
                             <div>
                                 <h3>Active Listener</h3>
                                 
@@ -224,26 +280,74 @@
                         </article>
 
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
                             <div>
                                 <h3>Attention To Detail</h3>
                             </div>
                         </article>
 
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
                             <div>
                                 <h3>Creativity</h3>
                             </div>
                         </article>
 
                         <article>
-                            <img src = "./Assets/checkmark.png" alt = "Experience icon"
-                            class = "icon">
+                            <div class="skill-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
                             <div>
                                 <h3>Active planner </h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div>
+                                <h3>Problem Solving</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3>Collaboration</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-arrows-rotate"></i>
+                            </div>
+                            <div>
+                                <h3>Adaptability</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>Time Management</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                <h3>Communication</h3>
                             </div>
                         </article>
 
@@ -258,11 +362,13 @@
                     </div>
                 </div>
 
+
             </div>
         </div>
 
-        <img src ="./Assets/arrow.png" alt = "Arrow icon" class = "icon-arrow"
-        onclick="location.href = './#projects'">
+        <div class="icon-arrow" onclick="location.href = './#projects'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
 
     </section>
 
@@ -273,48 +379,117 @@
         <h1 class = "title">
             Projects
         </h1>
-        <div class = "experience-details-container">
-            <div class = "about-containers">
-                <div class = "details-container color-container">
-                    <div class = "article-container">
-                        <img src = "./Assets/Amicus.png" alt = "Project 1"
-                        class = "project-img">
+        <div class="projects-container">
+            <!-- Project 1: Chat App -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="./Assets/Amicus.png" alt="Realtime Chat App" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Vite+React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                        </div>
                     </div>
-                    <h2 class = "experience-sub-title project-title">Realtime Chat App</h2>
-                    <div class ="btn-container">
-                        <button class = "btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/T-Traian/chat-app'">
-                            GitHub
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Realtime Chat App</h3>
+                    <p class="project-description">
+                        A modern real-time chat application with instant messaging, user authentication, and responsive design.
+                    </p>
+                    <div class="project-buttons">
+                        <button class="btn btn-primary" onclick="location.href='https://github.com/T-Traian/chat-app'">
+                            <i class="fab fa-github"></i> GitHub
                         </button>
-                        <button class = "btn btn-color-2 project-btn"
-                        onclick="location.href='https://chat-app-9xoy.onrender.com/signup'">
-                            Live Demo
+                        <button class="btn btn-secondary" onclick="location.href='https://chat-app-9xoy.onrender.com/signup'">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
                         </button>
                     </div>
                 </div>
-            
-                <div class = "details-container color-container">
-                    <div class = "article-container">
-                        <img src = "./Assets/temp-project.png" alt = "Project 1"
-                        class = "project-img">
+            </div>
+
+            <!-- Project 2: AI Fitness Trainer -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="./Assets/temp-project.png" alt="Project Two" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Next.js</span>
+                        </div>
                     </div>
-                    <h2 class = "experience-sub-title project-title">Project Two</h2>
-                    <div class ="btn-container">
-                        <button class = "btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/T-Traian'">
-                            GitHub
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI Fitness Trainer</h3>
+                    <p class="project-description">
+                        This project is still beeing built...
+                    </p>
+                    <div class="project-buttons">
+                        <button class="btn btn-primary" onclick="location.href='https://github.com/T-Traian'">
+                            <i class="fab fa-github"></i> GitHub
                         </button>
-                        <button class = "btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/T-Traian'">
-                            Live Demo
+                        <button class="btn btn-secondary" onclick="location.href='https://github.com/T-Traian'">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Coming soon...-->
+             <div class="project-card">
+                <div class="project-image-container">
+                    <img src="./Assets/temp-project.png" alt="Project Two" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-tech-stack">
+                          <!--  <span class="tech-tag">Next.js</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Coming soon...</h3>
+                    <p class="project-description">
+                        This project is still beeing built...
+                    </p>
+                    <div class="project-buttons">
+                        <button class="btn btn-primary" onclick="location.href='https://github.com/T-Traian'">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-secondary" onclick="location.href='https://github.com/T-Traian'">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Coming soon...-->
+             <div class="project-card">
+                <div class="project-image-container">
+                    <img src="./Assets/temp-project.png" alt="Project Two" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-tech-stack">
+                          <!--  <span class="tech-tag">Next.js</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Coming soon...</h3>
+                    <p class="project-description">
+                        This project is still beeing built...
+                    </p>
+                    <div class="project-buttons">
+                        <button class="btn btn-primary" onclick="location.href='https://github.com/T-Traian'">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-secondary" onclick="location.href='https://github.com/T-Traian'">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
                         </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <img src ="./Assets/arrow.png" alt = "Arrow icon" class = "icon-arrow"
-        onclick="location.href = './#contact'">
+        <div class="icon-arrow" onclick="location.href = './#contact'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
 
     </section>
 
@@ -323,16 +498,18 @@
         <h1 class = "title">Contact Me</h1>
         <div class = "contact-info-upper-container">
             <div class = "contact-info-container">
-                <img src = "./Assets/email.png" alt = "email icon"
-                class = "icon contact-icon mail-contact-icon">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
                 <p>
                     <a href = "mailto:traiantiniuc@gmail.com">traiantiniuc@gmail.com</a>
                 </p>
             </div>
 
             <div class = "contact-info-container">
-                <img src = "./Assets/linkedin.png" alt = "LinkedIn icon"
-                class = "icon contact-icon">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
                 <p>
                     <a href = "https://www.linkedin.com/">LinkedIn</a>
                 </p>
