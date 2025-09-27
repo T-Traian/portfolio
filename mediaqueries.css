@@ -174,26 +174,26 @@
     }
 
     .article-container {
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
     
     .article-container article {
-        flex-direction: row;
-        text-align: left;
+        flex-direction: column;
+        text-align: center;
         gap: 0.75rem;
         padding: 1rem;
     }
     
-    /* Both hard and soft skills use same layout on mobile */
+    /* Both hard and soft skills use same single-column layout on mobile */
     .skills-compact {
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
     
     .skills-compact article {
-        flex-direction: row;
-        text-align: left;
+        flex-direction: column;
+        text-align: center;
         gap: 0.75rem;
         padding: 1rem;
     }
