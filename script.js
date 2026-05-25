@@ -54,6 +54,16 @@ const observeElements = () => {
     });
 };
 
+// Download CV function
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = './Assets/CV.pdf';
+    link.download = 'CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     observeElements();
